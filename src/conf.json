@@ -1,0 +1,259 @@
+{
+    "API": {
+        "app": {
+            "title": "入口文件 - 添加",
+            "method": "GET",
+            "url": "/apps",
+            "headers": {},
+            "type": "json",
+            "body": "",
+            "actions": {
+                "v": ["GET", "JSON", {}, ""],
+                "l": "POST",
+                "c": "POST",
+                "u": "POST",
+                "d": "GET",
+                "navs": "GET",
+                "home": "GET",
+                "recommend": "GET"
+            },
+            "_children": {
+                "common": {
+                    "title": "公共请求",
+                    "method": "GET",
+                    "url": "/common",
+                    "headers": {},
+                    "type": "json",
+                    "body": "",
+                    "actions": {
+                        "v": ["GET", "JSON"],
+                        "l": "GET",
+                        "c": "POST",
+                        "u": "POST",
+                        "d": "GET"
+                    },
+                    "_children": {
+                        "user": {
+                            "title": "用户请求",
+                            "method": "GET",
+                            "url": "/users",
+                            "headers": {},
+                            "type": "json",
+                            "body": "",
+                            "actions": {
+                                "v": ["GET", "JSON", {}, ""],
+                                "l": "GET",
+                                "c": "POST",
+                                "u": "POST",
+                                "d": "POST"
+                            }
+                        },
+                        "cart": {
+                            "title": "购物车",
+                            "method": "GET",
+                            "url": "/carts",
+                            "headers": {},
+                            "type": "json",
+                            "body": "",
+                            "actions": {
+                                "v": ["GET", "JSON", {}, ""],
+                                "l": "GET",
+                                "c": "POST",
+                                "u": "POST",
+                                "d": "POST",
+                                "total": "POST"
+                            }
+                        },
+                        "action": {
+                            "title": "订单确认",
+                            "method": "GET",
+                            "url": "/orders",
+                            "headers": {},
+                            "type": "json",
+                            "body": "",
+                            "actions": {
+                                "v": ["GET", "JSON", {}, ""],
+                                "l": "GET",
+                                "c": "POST",
+                                "u": "POST",
+                                "d": "POST",
+                                "confirm": "POST"
+                            }
+                        },
+                        "deliveries": {
+                            "title": "订单计算",
+                            "method": "GET",
+                            "url": "/deliveries",
+                            "headers": {},
+                            "type": "json",
+                            "body": "",
+                            "actions": {
+                                "v": ["GET", "JSON", {}, ""],
+                                "l": "GET",
+                                "c": "POST",
+                                "u": "POST",
+                                "d": "POST",
+                                "way": "GET"
+                            }
+                        }
+                    }
+                },
+                "category": {
+                    "title": "商品分类",
+                    "method": "GET",
+                    "url": "/categories",
+                    "headers": {},
+                    "type": "json",
+                    "body": "",
+                    "actions": {
+                        "c": "POST",
+                        "u": "POST",
+                        "demo10": "GET"
+                    }
+                },
+                "order": {
+                    "title": "订单信息",
+                    "method": "GET",
+                    "url": "/orders",
+                    "headers": {},
+                    "type": "json",
+                    "body": "",
+                    "actions": {
+                        "c": "POST",
+                        "u": "POST",
+                        "d": "POST",
+                        "info": "GET",
+                        "view": "GET",
+                        "cancel": "POST",
+                        "tracking":"GET"
+                    }
+                },
+                "good": {
+                    "title": "商品信息",
+                    "method": "GET",
+                    "url": "/goods",
+                    "headers": {},
+                    "type": "json",
+                    "body": "",
+                    "actions": {
+                        "c": "POST",
+                        "u": "POST",
+                        "info": "GET",
+                        "view": "GET",
+                        "collection": "POST"
+                    }
+                },
+                "address": {
+                    "title": "会员地址",
+                    "method": "GET",
+                    "url": "/addresses",
+                    "headers": {},
+                    "type": "json",
+                    "body": "",
+                    "actions": {
+                        "l": "GET",
+                        "c": "POST",
+                        "u": "POST",
+                        "d": "POST",
+                        "view": "GET"
+                    }
+                },
+                "member": {
+                    "title": "修改个人信息",
+                    "method": "GET",
+                    "url": "/users",
+                    "headers": {},
+                    "type": "json",
+                    "body": "",
+                    "actions": {
+                        "l": "GET",
+                        "c": "POST",
+                        "u": "POST",
+                        "d": "POST"
+                    }
+                },
+                "money": {
+                    "title": "我的财产",
+                    "method": "GET",
+                    "url": "/users",
+                    "headers": {},
+                    "type": "json",
+                    "body": "",
+                    "actions": {
+                        "l": "GET",
+                        "c": "POST",
+                        "u": "POST",
+                        "d": "POST",
+                        "account": "GET"
+                    }
+                },
+                "region": {
+                    "title": "省市区",
+                    "method": "GET",
+                    "url": "/regions",
+                    "headers": {},
+                    "type": "json",
+                    "body": "",
+                    "actions": {
+                        "c": "POST",
+                        "u": "POST",
+                        "info": "GET",
+                        "view": "GET"
+                    }
+                },
+                "smscode": {
+                    "title": "获取手机验证码",
+                    "method": "GET",
+                    "url": "/users",
+                    "headers": {},
+                    "type": "json",
+                    "body": "",
+                    "actions": {
+                        "c": "POST",
+                        "u": "POST",
+                        "info": "GET",
+                        "send-sms": "POST"
+                    }
+                },
+                "pays": {
+                    "title": "支付",
+                    "method": "GET",
+                    "url": "/pays",
+                    "headers": {},
+                    "type": "json",
+                    "body": "",
+                    "actions": {
+                        "index": "GET",
+                        "wx-code-url": "GET",
+                        "wx-oauth": "GET"
+                    }
+                },
+                "register": {
+                    "title": "获取手机验证码",
+                    "method": "GET",
+                    "url": "/users",
+                    "headers": {},
+                    "type": "json",
+                    "body": "",
+                    "actions": {
+                        "c": "POST",
+                        "u": "POST",
+                        "info": "GET",
+                        "register": "POST"
+                    }
+                },
+                "login": {
+                    "title": "用户登陆",
+                    "method": "GET",
+                    "url": "/users",
+                    "headers": {},
+                    "type": "json",
+                    "body": "",
+                    "actions": {
+                        "login": ["POST", "JSON", {}]
+                    }
+                }
+            }
+        }
+    }
+}

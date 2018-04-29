@@ -1,0 +1,11 @@
+{
+    "HOST": {
+      "type": "host",
+      "title": "主机名",
+      "value": "http://api.xinminghui.com/v1"
+    },
+    "API_HOST": {
+      "type": "host",
+      "value": "172.178.1.62"
+    }
+  }
